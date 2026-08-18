@@ -43,11 +43,45 @@
     </nav>
 
     <main class="container mt-5">
+        <!-- Título de la sección -->
         <div class="container mb-5">
-            <div class="h2">Artistas </div>
-            <p>Selección de los mejores artistas de la historia de la música</p>
+            <div class="h2">Contáctanos </div>
+            <p>Envíanos un mensaje</p>
         </div>
- 
+        
+        <!-- Formulario -->
+         <div class="container w-75 border p-5 rounded">
+            <div class="h4 mb-4">Formulario de contacto</div>
+            <form>
+            <div class="mb-3">
+                <label for="nombreUsuario" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombreUsuario" placeholder="Ingresa nombre">
+            </div>
+            <div class="mb-3">
+                <label for="correoUsuario" class="form-label">Correo</label>
+                <input type="email" class="form-control" id ="correoUsuario" placeholder="Ingresa correo" aria-describedby="emailHelp" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="motivoUsuario" class="form-label">Motivo</label>
+                <select class="form-select" aria-label="Default select example" id="motivoUsuario">
+                    <option value="1">Problemas con mi cuenta</option>
+                    <option value="2">Nuevo disco</option>
+                    <option value="3">Nueva letra</option>
+                </select>
+            </div>
+            
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control mb-4" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+         </div>
+        
+
     </main>
 
     
