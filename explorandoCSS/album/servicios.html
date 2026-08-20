@@ -49,14 +49,60 @@
             <p>Explora nuestros servicios</p>
         </div>
         
-        <div class="border rounded p-5">
+        <div class="container mt-3">
+            <p>Fecha última actualización: <span id="fechaUltimaActualizacionDivisas"></span></p>
+        </div>
+
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Moneda</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Compra</th>
+                <th scope="col">Venta</th>
+                <!-- <th scope="col">Fecha Actualización</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span id="valorNombreUSD"></span></td>
+                    <td><span id="valorMonedaUSD"></span></td>
+                    <td><span id="valorUltimoCierreUSD"></span></td>
+                    <td><span id="valorCompraUSD"></span></td>
+                    <td><span id="valorVentaUSD"></span></td>
+                    <!-- <td><span id="valorFechaActualizacionUSD"></span></td> -->
+                </tr>
+                <tr>
+                    <td><span id="valorNombreEUR"></span></td>
+                    <td><span id="valorMonedaEUR"></span></td>
+                    <td><span id="valorUltimoCierreEUR"></span></td>
+                    <td><span id="valorCompraEUR"></span></td>
+                    <td><span id="valorVentaEUR"></span></td>
+                    <!-- <td><span id="valorFechaActualizacionEUR"></span></td> -->
+                </tr>
+                <tr>
+                    <td><span id="valorNombreBRL"></span></td>
+                    <td><span id="valorMonedaBRL"></span></td>
+                    <td><span id="valorUltimoCierreBRL"></span></td>
+                    <td><span id="valorCompraBRL"></span></td>
+                    <td><span id="valorVentaBRL"></span></td>
+                    <!-- <td><span id="valorFechaActualizacionBRL"></span></td> -->
+                </tr>
+            </tbody>
+        </table>
+
+            
+
+        <!--Tarjeta redondeada-->
+        <!-- <div class="border rounded p-5">
             <div class="h4 mb-3">Precios en tiempo real</div>
             <p> Dolar: <span  id="precioDolar"></span> CLP</p>
             <p> Euro: <span id="precioEuro"></span> CLP</p>
             <p> Euro: <span id="precioRealBr"></span> CLP</p>
-        </div>
+        </div> -->
         
-        <script src="./js/preciosMonedas.js"></script>
+        <script type="module" src="./js/preciosMonedas.js"></script>
     </main>
 
     
